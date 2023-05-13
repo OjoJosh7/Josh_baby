@@ -3,10 +3,8 @@ class product:
     #name = Toothbrush(The product)
     amount = 1000 
     price1 = 10.00
-    def __init__(self):`
+    def __init__(self):
         self.number = eval(input('How many items do you want to buy:', ))
-    def __str__(self):
-        return ('Your bill is ${}'.format(self.profit))
     def get_price(self):
         if self.number < 10:
            print('You will be charged the normal price of $10.00 per item')

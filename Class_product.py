@@ -1,8 +1,9 @@
+#!/usr/bin/python
 class product:
-    #name = Toothbrush
-    amount = 1000
+    #name = Toothbrush(The product)
+    amount = 1000 
     price1 = 10.00
-    def __init__(self):
+    def __init__(self):`
         self.number = eval(input('How many items do you want to buy:', ))
     def __str__(self):
         return ('Your bill is ${}'.format(self.profit))

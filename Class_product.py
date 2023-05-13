@@ -1,8 +1,9 @@
 #!/usr/bin/python
 class product:
     #name = Toothbrush(The product)
-    amount = 1000 
+    amount = 1000 # The number of units Available
     price1 = 10.00
+    text= 'Your bill is- ${} '
     def __init__(self):
         self.number = eval(input('How many items do you want to buy:', ))
     def get_price(self):
@@ -15,13 +16,13 @@ class product:
     def make_purchase(self):
             if self.number < 10:
                 self.price = self.number * self.price1
-                return self.price
+                return self.text.format(self.price)
             elif self.number >= 10 and self.number < 100:
                 self.price = (self.number * self.price1) - ((self.number * self.price1) *(10 / 100))
-                return self.price
+                return self.text.format(self.price)
             elif self.number >= 100 and self.number <= 1000:
                 self.price = (self.number * self.price1) - ((self.number * self.price1) *(20 / 100))
-                return self.price
+                return self.text.format(self.price)
             else :
                  self.number > self.amount
                  
